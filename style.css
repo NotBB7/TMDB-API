@@ -1,0 +1,42 @@
+#search-bar {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  #search-input {
+    flex: 1;
+    padding: 5px;
+  }
+  #search-button {
+    padding: 5px 10px;
+  }
+  #results {
+    margin-top: 20px;
+  }
+  #results {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .movie {
+    width: calc(25% - 10px);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+  
+  .movie h2 {
+    margin-top: 0;
+  }
+  
+  .movie p {
+    margin-bottom: 10px;
+  }
+  
+  .movie img {
+    width: 100%;
+    height: auto;
+  }
+  
