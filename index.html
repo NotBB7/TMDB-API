@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Recherche TMDB</title>
+  <meta charset="utf-8">
+  <title>Dernières sorties de films</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="search-bar">
-    <input type="text" id="search-input" placeholder="Recherche...">
-    <button id="search-button">Rechercher</button>
-  </div>
-  <div id="results"></div>
-  <div id="details"></div>
+  <h1>Dernières sorties de films</h1>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <div id="searchContainer">
+    <input type="text" id="searchInput" placeholder="Rechercher un film...">
+    <button id="searchButton">Rechercher</button>
+  </div>
+
+  <div id="movieContainer"></div>
+
   <script src="script.js"></script>
+</body>
+
 </body>
 </html>

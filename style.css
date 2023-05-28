@@ -1,42 +1,65 @@
-#search-bar {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  #search-input {
-    flex: 1;
-    padding: 5px;
-  }
-  #search-button {
-    padding: 5px 10px;
-  }
-  #results {
-    margin-top: 20px;
-  }
-  #results {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .movie {
-    width: calc(25% - 10px);
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-  }
-  
-  .movie h2 {
-    margin-top: 0;
-  }
-  
-  .movie p {
-    margin-bottom: 10px;
-  }
-  
-  .movie img {
-    width: 100%;
-    height: auto;
-  }
-  
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Styles de la barre de recherche */
+#searchContainer {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+/* Styles des cartes de films */
+#movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movieCard {
+  width: 200px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.movieCard img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Styles des erreurs */
+.error {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 10px;
+}
